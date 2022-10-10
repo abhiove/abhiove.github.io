@@ -122,11 +122,27 @@ table tr:hover td {
     background-color: #ddd;
     color: #2bb673;
 }
-
+@keyframes letterexpand {
+    0% {
+        letter-spacing: 5px;
+    }
+    25% {color: #2bb673}
+    50% {
+        letter-spacing: 10px;    
+    }
+    75% {color: black;}
+    100% {
+        letter-spacing: 5px;
+    }
+}
 #soon {
+    animation-name: letterexpand;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
     margin-top: 270px;
     font-family: Source Sans Pro;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 20px;
     text-align: center;
     color: #2bb673;
 }
@@ -146,3 +162,4 @@ table tr:hover td {
     border: solid 3px #2bb673;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
+
